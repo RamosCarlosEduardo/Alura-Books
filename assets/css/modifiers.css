@@ -1,0 +1,7 @@
+.cabecalho__menu--active {
+	display: initial;
+}
+.cabecalho__container__menu-icon--active {
+	background-color: var(--cor-background-escuro);
+	color: var(--cor-branca);
+}

@@ -1,0 +1,33 @@
+@import url("header.css");
+@import url("modifiers.css");
+
+
+:root {
+	font-family: 'Poppins', sans-serif;
+	--cor-branca: #FFFFFF;
+	--cor-background-claro: #EBECEE;
+	--cor-background-escuro: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+	--cor-laranja: #EB9B00;
+}
+
+body {
+	background-color: var(--cor-background-claro);
+
+}
+
+header {
+	background-color: var(--cor-branca);
+}
+
+
+
+/*MEDIAS*/
+@media screen and (max-width: 428px){
+
+}
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 1728px){
+
+}
