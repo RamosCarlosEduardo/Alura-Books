@@ -43,6 +43,7 @@
 .menu-botao__label:hover {
 	cursor: pointer;
 }
+
 .cabecalho__menu-hamburguer {
 	background-image: url("../img/Menu.svg");
 	background-repeat: no-repeat;

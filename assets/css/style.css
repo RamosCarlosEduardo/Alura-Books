@@ -1,6 +1,7 @@
 @import url("header.css");
 @import url("modifiers.css");
-
+@import url("banner.css");
+@import url("carrossel.css");
 
 :root {
 	--fonte-principal: 'Poppins';
@@ -12,7 +13,7 @@
 
 body {
 	background-color: var(--cor-background-claro);
-	font-family: var(--fonte-principal);, sans-serif;
+	font-family: var(--fonte-principal), sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 16px;
