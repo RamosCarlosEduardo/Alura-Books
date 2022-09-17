@@ -29,12 +29,11 @@
 }
 
 .banner__busca::placeholder {
-	text-indent: 2.5em;
 	text-align: center;
 	color: var(--cor-branca);
 	font-weight: 400;
 	font-size: 14px;
 	background-image: url("../img/Pesquisa.svg");
 	background-repeat: no-repeat;
-	background-position: 1em;
+	background-position: calc(50% - 120px);
 }
