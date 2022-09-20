@@ -6,7 +6,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 1rem;
+	padding: 18px 1rem;
 }
 .cabecalho__container {
 	display: flex;
@@ -29,7 +29,7 @@
 }
 
 
-.menu-botao:checked~.cabecalho__menu{
+.menu-botao:checked~.cabecalho__menu-mob{
 	display: block;
 }
 
@@ -56,14 +56,16 @@
 	cursor: pointer;
 }
 
-.cabecalho__menu {
+.cabecalho__menu, .cabecalho__menu-h {
 	position: absolute;
-	top: 100%;
-	width: 60vw;
-	left: 0;
+	top: calc(100% - 18px);
+	width: 40vw;
 	display: none;
 	background-color: var(--cor-branca);
 	z-index: 10;
+}
+.cabecalho__menu {
+	left: 0;
 }
 
 .cabecalho__menu__titulo {
@@ -71,7 +73,7 @@
 	font-weight: 700;
 }
 
-.cabecalho__menu__titulo, .cabecalho__menu__item {
+.cabecalho__menu__titulo, .cabecalho__menu__links {
 	padding: 16px 24px;
 	font-size: 16px;
 	line-height: 24px;
@@ -84,11 +86,18 @@
 	background-clip: text;
 	text-fill-color: transparent;
 	text-transform: uppercase;
+	display: inline-block;
+	width: 100%;
 }
 
-.cabecalho__menu__links:hover {
+.cabecalho__menu__item:hover .cabecalho__menu__links, .cabecalho__menu__item:hover {
+	background: var(--cor-azul-degrade);
 	text-decoration: underline;
 	text-decoration-color: #002F52;
+	color: var(--cor-branca);
+	-webkit-text-fill-color: var(--cor-branca);
+	text-fill-color: var(--cor-branca);
+	cursor: pointer;
 }
 
 
@@ -96,16 +105,31 @@
 	font-weight: 700;
 }
 
+.cabecalho__logo-texto {
+	display: none;
+}
+
 .menu-h {
 	display: none;
 }
 
+.menu-botao:checked~.cabecalho__menu-h{
+		display: none;
+}
+
 @media screen and (min-width: 1024px){
+	.menu-botao:checked~.cabecalho__menu-mob{
+		display: none;
+	}
+
+	.menu-h-botao:checked~.cabecalho__menu-h{
+		display: block;
+	}
 
 	.cabecalho {
 		padding: 18px 80px;
 	}
-
+	
 	.cabecalho__logo-texto {
 		display: none;
 		font-family: var(--fonte-josefin);
@@ -134,7 +158,6 @@
 
 	.cabecalho__menu {
 		width: auto;
-		left: 40%;
 	}
 
 	.cabecalho__menu__titulo {
@@ -146,14 +169,25 @@
 		gap: 32px;
 		margin: 0 32px;
 	}
+
+	.menu-h-botao:checked~.menu-h__label {
+		background: var(--cor-azul-degrade);
+		background-clip: border-box;
+		color: var(--cor-branca);
+	}
+	.menu-h-botao:checked~.menu-h__label span {
+		color: var(--cor-branca);
+	}
 	.menu-h__item {
 		color: #000;
 		text-transform: uppercase;
 		cursor: pointer;
+		padding: 18px 6px;
+		display: inline-block;
 	}
 
 
 }
-@media screen and (max-width: 1728px){
+@media screen and (min-width: 1728px){
 
 }
