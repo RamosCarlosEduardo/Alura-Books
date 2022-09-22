@@ -59,15 +59,19 @@
 .cabecalho__menu, .cabecalho__menu-h {
 	position: absolute;
 	top: calc(100% - 18px);
-	width: 40vw;
+	width: auto;
 	display: none;
 	background-color: var(--cor-branca);
 	z-index: 10;
+	border: solid 0.5px black;
 }
 .cabecalho__menu {
-	left: 0;
+	left: 16px;
 }
 
+.cabecalho__menu-h {
+	left: calc(50% - 130px);
+}
 .cabecalho__menu__titulo {
 	color: var(--cor-laranja);
 	font-weight: 700;
@@ -112,11 +116,15 @@
 .menu-h {
 	display: none;
 }
-
+.menu-h__link {
+	text-transform: uppercase;
+}
 .menu-botao:checked~.cabecalho__menu-h{
 		display: none;
 }
-
+.icone__descricao {
+	display: none;
+}
 @media screen and (min-width: 1024px){
 	.menu-botao:checked~.cabecalho__menu-mob{
 		display: none;
@@ -189,5 +197,22 @@
 
 }
 @media screen and (min-width: 1728px){
+	.icone__descricao {
+		display: block;
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.cabecalho__icon--sacola, .cabecalho__icon--perfil {
+		display: flex;
+		align-items: center;
+	}
+
+	.menu-h {
+		margin-right: auto;
+	}
+
+	.cabecalho__menu-h {
+    	left: 330px;
+	}
 
 }

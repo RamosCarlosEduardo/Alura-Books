@@ -5,6 +5,7 @@
 	justify-content: center;
 	gap: 1.5rem;
 	padding: 24px;
+	background-color: var(--cor-branca);
 }
 
 .novidades__titulo {
@@ -54,6 +55,25 @@
 }
 
 @media screen and (min-width: 1024px){
+	.novidades {
+		flex-direction: row;
+		padding: 36px 10%;
+		gap: 10%;
+	}
 	
+	.novidades__texto {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+	.novidades__titulo{
+		font-size: 24px;
+		line-height: 36px;
+	}
+
+	.novidades__botao {
+		width: 50%;
+	}
+
 
 }

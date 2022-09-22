@@ -64,3 +64,10 @@
 	line-height: 24px;
 	color: var(--cor-branca);
 }
+
+@media screen and (min-width: 1728px){
+	.card-container {
+		margin: 0;
+	}
+
+}

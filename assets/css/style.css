@@ -5,14 +5,19 @@
 @import url("cards.css");
 @import url("banner-inferior.css");
 @import url("novidades.css");
+@import url("footer.css");
 
 :root {
 	--fonte-principal: 'Poppins', sans-serif;
 	--fonte-josefin: 'Josefin Sans', sans-serif;
 	--cor-branca: #FFFFFF;
 	--cor-background-claro: #EBECEE;
+	--cor-cinza-claro: #F9F9F9;
+	--cor-cinza: #858585;
 	--cor-azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
 	--cor-laranja: #EB9B00;
+	--swiper-navigation-size: 24px;
+	 --swiper-navigation-color: #FFF;
 }
 
 body {
@@ -28,23 +33,16 @@ header {
 	background-color: var(--cor-branca);
 }
 
-footer {
-	border-top: solid 2px black;
-	height: 3rem;
-	padding: 1rem 1rem 3rem 1rem;
-}
 
-footer p {
 
-}
 
 /*MEDIAS*/
-@media screen and (max-width: 428px){
+/*@media screen and (min-width: 428px){
 
 }
-@media screen and (max-width: 1024px){
+@media screen and (min-width: 1024px){
 
 }
-@media screen and (max-width: 1728px){
+@media screen and (min-width: 1728px){
 
-}
+}*/

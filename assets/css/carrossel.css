@@ -39,5 +39,32 @@
 	.swiper {
 		margin: 20px 112px;
 	}
+
+	.swiper-button-prev,
+	.swiper-button-next {
+		display: flex;
+		width: 48px;
+		height: 48px;
+		background: var(--cor-azul-degrade);
+		border-radius: 50%;
+		align-items: center;
+		justify-content: center;
+	}
 }
 
+@media screen and (min-width: 1728px){
+	.carrossel {
+		display: grid;
+		grid-template-columns: 10% 1fr 1fr 10%;
+		margin-bottom: 3.5rem;
+		row-gap: 3rem;
+	}
+	.carrossel__titulo {
+		grid-column: span 4;
+		padding-top: 2rem;
+	}
+	.swiper {
+		grid-column: 2;
+		margin: 0;
+	}
+}

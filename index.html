@@ -85,11 +85,13 @@
 				<a href="#" class="cabecalho__icon--favoritos">
 					<img src="./assets/img/Favoritos.svg" alt="Ícone favoritos" class="cabecalho__icon cabecalho__icon--favoritos">
 				</a>
-				<a href="#">
+				<a href="#" class="cabecalho__icon--sacola">
 					<img src="./assets/img/Compras.svg" alt="Ícone compras" class="cabecalho__icon">
+					<span class="icone__descricao">Minha sacola</span>
 				</a>
-				<a href="#">
+				<a href="#" class="cabecalho__icon--perfil">
 					<img src="./assets/img/Usuário.svg" alt="Ícone usuário" class="cabecalho__icon">
+					<span class="icone__descricao">Meu perfil</span>
 				</a>
 			</div>
 		</div>
@@ -104,7 +106,7 @@
 
 		<section class="carrossel">
 			<h2 class="carrossel__titulo">Últimos lançamentos</h2>
-
+			
 			<!-- Slider main container -->
 			<div class="swiper">
 
@@ -205,7 +207,6 @@
 				    <div class="swiper-slide">
 				    	<img src="./assets/img/books/Tuning.png" alt="Livro Tuning" class="carrossel__item">
 				    </div>
-			    ...
 			  </div>
 			  
 			  <!-- If we need navigation buttons -->
@@ -278,13 +279,14 @@
 				</ul>
 		</section>
 		<section class="novidades">
+			<div class="novidades__texto">	
 			<h2 class="novidades__titulo">
 				Fique por dentro das novidades!
 			</h2>
 			<p class="novidades__descricao">
 				Atualizações de e-books, novos livros, promoções e outros.
 			</p>
-
+			</div>
 			<input type="text" placeholder="Cadastre seu e-mail" class="novidades__botao"></button>
 			
 		</section>
@@ -292,9 +294,92 @@
 
 	</main>
 	
-	<footer>
-		<p>Grupo Alura</p>
+	<footer class="footer">
+		<div class="footer__container footer__container--titulo">	
+				<h2 class="footer__titulo">Grupo Alura</h2>
+		</div>
+
+		<div class="footer__container footer__container--educacao">	
+			<h3 class="footer__container__titulo">Educação</h3>
+			<ul class="footer__container footer__container--ul">
+				<li class="footer__li">
+					<img src="./assets/img/Caelum.png" alt="Logo Caelum" class="footer__logo">
+					<a href="#" class="footer__link">Caelum</a>
+				</li>
+				<li class="footer__li">
+					<img src="./assets/img/CasaDoCodigo.png" alt="Logo Casa do Código" class="footer__logo">
+					<a href="#" class="footer__link">Casa do Código</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__container footer__container--educacao-online">	
+			<h3 class="footer__container__titulo">Educação Online</h3>
+			<ul class="footer__container footer__container--ul">
+				<li class="footer__li">
+					<img src="./assets/img/Alura.png" alt="Logo Alura" class="footer__logo">
+					<a href="#" class="footer__link">Alura</a>
+				</li>
+				<li class="footer__li">
+					<img src="./assets/img/AluraEmpresas.png" alt="Logo Alura Para Empresas" class="footer__logo">
+					<a href="#" class="footer__link">Alura Para Empresas</a>
+				</li>
+				<li class="footer__li">
+					<img src="./assets/img/AluraLatam.png" alt="Logo Alura Latam" class="footer__logo">
+					<a href="#" class="footer__link">Alura Latam</a>
+				</li>
+				<li class="footer__li">
+					<img src="./assets/img/AluraStart.png" alt="Logo Alura Start" class="footer__logo">
+					<a href="#" class="footer__link">Alura Start</a>
+				</li>
+				<li class="footer__li">
+					<img src="./assets/img/MusicDot.png" alt="Logo MusicDot" class="footer__logo">
+					<a href="#" class="footer__link">MusicDot</a>
+				</li>
+				<li class="footer__li">
+					<img src="./assets/img/AluraLingua.png" alt="Logo Alura Lingua" class="footer__logo">
+					<a href="#" class="footer__link">Alura Língua</a>
+				</li>
+				<li class="footer__li">
+					<img src="./assets/img/PM3.png" alt="Logo PM3" class="footer__logo">
+					<a href="#" class="footer__link">PM3</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__container footer__container--comunidade">	
+			<h3 class="footer__container__titulo">Comunidade</h3>
+			<ul class="footer__container footer__container--ul">
+				<li class="footer__li">
+					<img src="./assets/img/HipstersTech.png" alt="Logo Hipsters ponto Tech" class="footer__logo">
+					<a href="#" class="footer__link">Hipsters ponto Tech</a>
+				</li>
+				<li class="footer__li">
+					<img src="./assets/img/Scuba.png" alt="Logo Scuba Dev" class="footer__logo">
+					<a href="#" class="footer__link">Scuba Dev</a>
+				</li>
+				<li class="footer__li">
+					<img src="./assets/img/Layers.png" alt="Logo Layers ponto Tech" class="footer__logo">
+					<a href="#" class="footer__link">Layers ponto Tech</a>
+				</li>
+				<li class="footer__li">
+					<img src="./assets/img/LikeABoss.png" alt="Logo Like a Boss" class="footer__logo">
+					<a href="#" class="footer__link">Like a Boss</a>
+				</li>
+				<li class="footer__li">
+					<img src="./assets/img/CarreiraSemFronteira.png" alt="Logo Carreira sem Fronteira" class="footer__logo">
+					<a href="#" class="footer__link">Carreira sem Fronteira</a>
+				</li>
+				<li class="footer__li">
+					<img src="./assets/img/HipstersJobs.png" alt="Logo Hipsters ponto Jobs" class="footer__logo">
+					<a href="#" class="footer__link">Hipsters ponto Jobs</a>
+				</li>
+				<li class="footer__li">
+					<img src="./assets/img/GUJ.png" alt="Logo GUJ" class="footer__logo">
+					<a href="#" class="footer__link">GUJ</a>
+				</li>
+			</ul>
+		</div>
 	</footer>
+
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="./assets/js/carrossel.js"></script>
 </body>
